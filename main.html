@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/mainStyle.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/shake.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Press+Start+2P|Spicy+Rice" rel="stylesheet">  
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.jrumble.1.3.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+
+        <img src="https://www.playplay.io/img/tic-tac-toe.png" class="logo animated wow jello" data-wow-duration="4s" data-wow-delay="3s">
+        <div id="winner"></div>
+    <div class="grid">
+        
+    <button class="boxes" onclick="checkButtons(this.id)" id="1"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="2"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="3"></button>
+    </div>
+    <div class="grid">
+    <button class="boxes" onclick="checkButtons(this.id)" id="4"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="5"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="6"></button>
+</div>
+<div class="grid">
+    <button class="boxes" onclick="checkButtons(this.id)" id="7"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="8"></button>
+    <button class="boxes" onclick="checkButtons(this.id)" id="9"></button>
+</div>
+    </div>
+    
+</body>
+
+
+
+<script>
+
+$('#1').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#1').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+
+
+$('#2').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#2').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#3').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#3').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#4').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#4').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#5').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#5').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#6').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#6').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+
+$('#7').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#7').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#8').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#8').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+
+$('#9').jrumble({
+	x: 6,
+	y: 6,
+	rotation: 6,
+	speed: 5,
+	opacity: true,
+	opacityMin: .05
+});
+
+$('#9').hover(function(){
+	$(this).trigger('startRumble');
+}, function(){
+	$(this).trigger('stopRumble');
+});
+</script>
+<script src="js/main.js"></script>
+</html>
